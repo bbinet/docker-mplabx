@@ -20,7 +20,7 @@ RUN curl -fSL -A "Mozilla/4.0" -o /tmp/xc16.run "http://www.microchip.com/mplabx
 ENV PATH /opt/microchip/xc16/v1.25/bin:$PATH
 
 # Download and install MPLAB X IDE
-RUN curl -fSL -A "Mozilla/4.0" -o /tmp/mplabx-installer.tar "http://www.microchip.com/mplabx-ide-linux-installer"
+RUN curl -fSL -A "Mozilla/4.0" -o /tmp/mplabx-installer.tar "http://www.microchip.com/mplabx-ide-linux-installer" \
     && tar xf /tmp/mplabx-installer.tar && rm /tmp/mplabx-installer.tar \
     && USER=root ./MPLABX-v3.10-linux-installer.sh --nox11 \
         -- --unattendedmodeui none --mode unattended \
