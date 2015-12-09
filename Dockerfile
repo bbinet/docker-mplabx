@@ -9,7 +9,7 @@ RUN dpkg --add-architecture i386 \
     && apt-get update -yq \
     && apt-get install -yq --no-install-recommends curl libc6:i386 \
     libx11-6:i386 libxext6:i386 libstdc++6:i386 libexpat1:i386 \
-    libxext6 libxrender1 libxtst6 libgtk2.0-0
+    libxext6 libxrender1 libxtst6 libgtk2.0-0 libxslt1.1
 
 # Download and install XC16 compiler
 RUN curl -fSL -A "Mozilla/4.0" -o /tmp/xc16.run "http://www.microchip.com/mplabxc16linux" \
