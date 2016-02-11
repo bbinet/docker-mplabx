@@ -19,7 +19,7 @@ RUN curl -fSL -A "Mozilla/4.0" -o /tmp/xc16.run "http://www.microchip.com/mplabx
     && rm /tmp/xc16.run
 ENV PATH /opt/microchip/xc16/v1.25/bin:$PATH
 
-ENV MPLABX_VERSION 3.15
+ENV MPLABX_VERSION 3.20
 
 # Download and install MPLAB X IDE
 # Use url: http://www.microchip.com/mplabx-ide-linux-installer to get the latest version
